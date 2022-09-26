@@ -26,19 +26,33 @@
             paragraph tag p: this tag indicates the content to be a paragraph 
 
         -->
+        <header>
         <h1>Basic Html Tags</h1>
+        <nav>
+            <h2>nav tags titles are optional</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Semantics.index.html">Semantics</a></li>
+                <li><a href="#">Html Basics</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section>
         <h3>Paragraph tag</h3>
         <p>This page demonstrates the basic structue of an html web. The head area has the 
             browser title tab specified as well as the charset defined. The body is demonstrating
             the h1 header tag and the paragraph tag.
         </p>
         <p>this is another paragraph</p>
+        </section>
         <!--
             If you wish to use a component of a reversed tag (or the whole tag)
             you would be in trouble using the tag. 
             instead: you can special character springs to represent components of the tag such as the < (&lt;)
             and the > (&gt;) symbols 
         -->
+        <section>
         <h3>List tags: &lt;ol&gt; and &lt;ul&gt;</h3>
         <!--
             block tag, paired 
@@ -66,8 +80,9 @@
             <li>default display is a bulleted list</li>
             <li>We will see later how to remove these bullets using css styling</li>
         </ul>
-
-        <h3>Anchor tag (aka linking to another page)</h3>
+    </section>
+    <section>
+        <h2>Anchor tag (aka linking to another page)</h2>
         <!-- Blocked paired
             This is an anchor tag and is incorrectly often referred to as the 
             link tag
@@ -85,8 +100,9 @@
         -->
 
         <a href="https://www.nait.ca" target="_blank">go to Nait</a>
-
-        <h3>Image Tag</h3>
+    </section>
+    <section>
+        <h2>Image Tag</h2>
         <!--
             This is an empty (void) tag
             Image tag does not have a closing tag
@@ -135,7 +151,8 @@
             <img src="img/photoshop.png" alt="logo photoshop"
             title="a logo image of photoshop" style="width: 80px; height:80px">
         </a>
-           
+    </section> 
         
     </body>
+</main>
 </html>
