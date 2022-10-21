@@ -63,7 +63,7 @@ content: by default this is the display area of your
              whether there are margin, border and/or 
             padding specified for the element.
         
-calculation page-width = lm + lb + lp+ content + rp + rb + rm
+calculation page-width = lm + lb + lp + content + rp + rb + rm
 
 samples: 960 = 0 + 0 + 0 + content + 0 + 0 + 0 
          960 - (0 + 0 + 0 + 0 + 0 + 0)= content 
