@@ -45,6 +45,7 @@ body {
     margin 10px between the boxes (red and blue)
     footer 10px margin 
 
+    blue and red:
     calculation page-width = (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm) 
     960 = (10 + 0 + 0 + content + 0 + 0 + 0) + (10 + 0 + 0 + content + 0 + 0 + 0) + 10 
     960 = 30 + 2 * content 
@@ -52,17 +53,29 @@ body {
     930 / 2 = content  
     465 = content 
 
+    black:
+    960 = lm + lb + lp + content + rp + rb + rm
+    960 = 10 + 0 + 0 + content + 0 + 0 + 10
+    960 = 20 + content 
+    960 - 20 = content
+    940 = content 
+
 ****************************************************/
 
 main{
     background-color: lightgrey; 
     display: flex;
+    flex-wrap: wrap; 
 }
 
 /*********************
     since there is no actual content we will
     simulate the content with a fixed height 
-    value of 300px 
+    value of 200px 
+
+    flexwrap effects a flex display area, without the 
+    display: flex; flex-wrap is meaningless. 
+    
 *********************/
 
 main div{
@@ -78,6 +91,24 @@ main div{
 .blue-paint{
     background-color: blue;
 }
+
+/************************
+    flexblock attempts to place all elements within it's "specified container area" 
+    on the same line 
+
+    flexblock will automatically adjust measurments to get all elements to appear
+    on the same line 
+
+    problem: I don't want all elements to be on the same line 
+             I don't want my measurments adjusted
+
+    solution: Use flex-wrap: wrap; 
+
+    this will place as many elements as possible on a single row without adjusting
+    the measurments of your element. Any left over elements will wrap to the following 
+    line until all elements have been displayed 
+
+************************/
 
 .black-paint{
     background-color: black;
