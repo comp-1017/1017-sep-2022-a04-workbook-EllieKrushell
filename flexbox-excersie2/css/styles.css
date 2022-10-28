@@ -1,0 +1,92 @@
+body {
+	background-color: #ffffff;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 36px;
+	margin: 30px 0;
+}
+
+/* YOUR STYLES */
+
+main{
+    background-color: lightgrey; 
+	border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+/**********************************
+
+the height of the right colom items can use a simular  
+calculations as the horizontal layout 
+
+the one item that you MUST remember is that the vertical margi (VM)
+between items are collapsed 
+the largest VM is used between any two single items
+
+600 = 2(vm + tm + tb + tp + content + bp + bb) + remainder 
+600 = 2(10 + 2 + 0 + content + 0 + 2) + 14 
+600 = 2 * 4 + 2 * content 
+600 = 18 + 2content
+582 / 2 = content
+291 = content  
+
+***********************************/
+
+.contentsize{
+margin: 10px 0px 10px 10px;
+width: 768px;
+height: 292px;
+border: 2px solid black;	
+}
+
+.asidesize{
+	margin: 10px 0px 10px 10px;
+	width: 150px;
+	height: 600px;
+}
+
+.red-paint{
+    background-color: red;
+	border: 2px solid black;
+}
+
+.blue-paint{
+    background-color: blue;
+	border: 2px solid black;
+}
+
+
+.yellow-paint{
+	background-color: yellow;
+	border: 2px solid black;
+}
+
+
+
+/****************************************************
+calculation page-width = (lm + lb + lp + content + rp + rb + rm) +  (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm)
+960 = (30 + 0 + 0 + content + 0 + 0 + 0) + (30 + 0 + 0 + content + 0 + 0 + 0) + (30 + 0 + 0 + content + 0 + 0 + 0) + 30 + 30
+960 = 150 + 3 * content 
+960 - 150 = 3 * content 
+840 / 3 = content 
+270 = content 
+
+calculation page-width = (lm + lb + lp + content + rp + rb + rm) +  (lm + lb + lp + content + rp + rb + rm)
+960 = (10 + 2 + 150 + 0 +2 + 0) + (10 + 2 + 0 content 0 + 2 + 10) + (10 + 2 + 2)
+960 = 192 + content 
+960 - 192 = content
+768 = content 
