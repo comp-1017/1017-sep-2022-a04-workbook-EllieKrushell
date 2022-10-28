@@ -42,7 +42,9 @@ the largest VM is used between any two single items
 600 = 2 * 4 + 2 * content 
 600 = 18 + 2content
 582 / 2 = content
-291 = content  
+291 = content 
+
+this only works because the content area of the vertical boxes are equal
 
 ***********************************/
 
