@@ -1,0 +1,93 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'Montserrat' , sans-serif;
+}
+
+/*******
+the default fill for background is repeat
+	repeat is in both x and y axis
+	repeat-x only along x axis
+	repeat-y only along y axis
+	none 
+********/
+
+.page-header{
+	background: url(../img/header-background.png);
+}
+
+.hidden{
+	display: none;
+}
+
+/*
+convert point to pixel
+	pt * 1.3333 px
+	48pt * 1.3333px = 64px
+*/
+
+h2{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 45px;
+	font-weight: bold;
+}
+
+section > p{
+	color: #7f8c8c;
+}
+
+h2,
+footer p,
+h3{
+	color:#0b777b;
+}
+
+span{
+	font-size: 18.6px;
+	color: #378184;
+	font-weight: bolder;
+}
+
+strong{
+	color: #094244;
+	font-weight: bold;
+}
+
+/***************
+layout
+**************/
+
+section footer img{
+	vertical-align: middle;
+}
+
+section{
+	margin-top: 70px;
+}
+
+section footer{
+	margin-top: 24px;
+}
+
+section footer span{
+	margin: 0px 20px;
+}
+
+footer img{
+	margin: 0px 5px;
+}
+
+.footer-margin{
+	margin: 100px 0px;
+}
