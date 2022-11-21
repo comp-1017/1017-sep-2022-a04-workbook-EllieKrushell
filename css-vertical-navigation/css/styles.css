@@ -54,3 +54,9 @@ header > img{
 .banner li{
 	line-height: 40px;
 }
+
+.nav-pattern{
+	background: url(../img/pattern-bg.gif) repeat;
+	height: 690px;
+	padding: 60px;
+}
