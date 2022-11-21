@@ -28,3 +28,32 @@ header{
 header .logo{
 	margin: 10px;
 }
+
+nav a{
+	text-decoration: none;
+	color: #f1f7f6;
+}
+
+/* Line height equals the height of the header elemnt and it vertically centers to the text */
+
+nav li{
+	font-size: 18px;
+	line-height: 75px;
+	margin-right: 30px;
+}
+
+nav ul{
+	display: flex;
+}
+
+header{
+	display: flex;
+}
+
+header nav{
+	margin-left: 210px;
+}
+
+header a:hover{
+	border-bottom: 2px solid #abddd5;
+}
